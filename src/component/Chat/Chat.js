@@ -24,7 +24,7 @@ const Chat = () => {
 
         document.getElementById('chatInput').value="";
     }
-    console.log(messages);
+    // console.log(messages);
     useEffect(() => {
         socket = socketIO(ENDPOINT, {transports:['websocket'] });
 
@@ -32,22 +32,22 @@ const Chat = () => {
             alert("Connected");
             setid(socket.id);
         })
-        console.log(socket);
+        // console.log(socket);
         socket.emit('joined',{user})
 
         socket.on('welcome',(data)=>{
             setMessages([...messages,data]);
-            console.log(data.user, data.message)
+            // console.log(data.user, data.message)
         })
 
         socket.on('userJoined',(data)=>{
             setMessages([...messages,data]);
-            console.log(data.user,data.message);
+            // console.log(data.user,data.message);
         })
 
         socket.on('leave',(data) => {
             setMessages([...messages,data]);
-            console.log(data.user,data.message);
+            // console.log(data.user,data.message);
         })
 
         return () => {
@@ -59,7 +59,7 @@ const Chat = () => {
     useEffect(()=>{
         socket.on('sendMessage',(data)=>{
             setMessages([...messages,data]);
-            console.log(data,user,data.message,data.id);
+            // console.log(data,user,data.message,data.id);
         }) 
         return () =>{
             socket.off();

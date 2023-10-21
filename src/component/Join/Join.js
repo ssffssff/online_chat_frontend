@@ -33,7 +33,7 @@ const Join = () => {
 
   const sendUser = () => {
     user = document.getElementById('JoinInput').value;
-    console.log(user);
+    // console.log(user);
     document.getElementById('JoinInput').value = '';
   };
 
