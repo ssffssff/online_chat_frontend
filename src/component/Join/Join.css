@@ -74,4 +74,9 @@
     left: 20px; /* Adjust this value to change the horizontal position */
     z-index: 2; /* Ensure the text is above other elements */
   }
+  @media (max-width: 768px) {
+    .animated-text.left-corner{
+      font-size: 18px; /* Adjust the font size for mobile devices */
+    }
+  }
   

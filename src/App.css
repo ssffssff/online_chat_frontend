@@ -1,96 +1,98 @@
-body{
-  margin: 0;
-}
-
-
-@media (max-aspect-ratio: 7/10) {
-
-  .JoinPage{
-     
-    
+body {
+    margin: 0;
+  }
+  
+  /* Default font size for larger screens */
+  .animated-text {
+    font-size: 24px;
+  }
+  
+  /* Adjust font size for smaller screens, like mobile devices */
+  @media (max-width: 768px) {
+    .animated-text {
+      font-size: 18px; /* Adjust the font size for mobile devices */
+    }
+  }
+  
+  /* Media Query for screens with max aspect ratio of 7/10 */
+  @media (max-aspect-ratio: 7/10) {
+    .JoinPage {
       display: flex;
       justify-content: center;
-      align-items: flex-start !important;
-  }
-  .JoinContainer{
-      margin-top: 30vw !important;
-      width: 100% !important;
-     
-  }
-
-  .JoinContainer > img{
-      width: 30vw !important;
-  }
-  .JoinContainer > h1{
-    
-      font-size: 6vw !important;
-      width: 65vw !important;
-      border-bottom: 0.6vw solid white !important;
-      padding: 3vw !important;
-     
-  }
-
-  #joinInput{
-      width: 65vw !important;
-      padding: 4vw !important;
-     
-      font-size: 5vw !important;
-      margin:5vw !important;
-     
-  }
-  .joinbtn{
-      width: 65vw !important;
-      padding: 4vw !important;
-      
-      font-size: 5vw !important;
-    
-  }
-
-  .chatContainer{
+      align-items: flex-start;
+    }
+  
+    .JoinContainer {
+      margin-top: 10vw; /* Use a relative unit like vw instead of !important */
+      width: 100%;
+    }
+  
+    .JoinContainer > img {
+      width: 30vw;
+    }
+  
+    .JoinContainer > h1 {
+      font-size: 6vw;
+      width: 65vw;
+      border-bottom: 0.6vw solid white;
+      padding: 3vw;
+    }
+  
+    #JoinInput { /* Note: Corrected the ID selector name */
+      width: 65vw;
+      padding: 4vw;
+      font-size: 5vw;
+      margin: 5vw;
+    }
+  
+    .Joinbtn {
+      width: 65vw;
+      padding: 4vw;
+      font-size: 5vw;
+    }
+  
+    .chatContainer {
       background-color: white;
-      height: 100% !important;
-      width: 100% !important; 
-  }
-  .header{
-     
-      height: 10% !important;
-  }
-  .header>h2{
-      margin: 8vw !important;
-      font-size: 5vw !important;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .header {
+      height: 10%;
+    }
+  
+    .header > h2 {
+      margin: 2vw; /* Adjusted margin for better spacing */
+      font-size: 5vw;
+    }
+  
+    .header img {
+      margin: 1vw; /* Adjusted margin for better spacing */
+      transform: scale(2);
+    }
+  
+    .header > img:hover {
+      transform: scale(3.2);
+    }
+  
+    .chatBox {
+      height: 80%;
+    }
+  
+    .inputBox {
+      height: 10%;
+    }
+  
+    #chatInput {
+      padding: 4vw;
+      font-size: 4vw;
+    }
+  
+    .messageBox {
+      padding: 3vw;
+      margin: 1vw; /* Adjusted margin for better spacing */
+      border-radius: 1.5vw;
+      font-size: 3.7vw;
+    }
   }
   
-  .header img{
-      
-      margin: 6vw !important;
-      transform: scale(2) !important;
-  }
-  .header>img:hover{
-      transform: scale(3.2) !important;
-  }
-  .chatBox{
-
-      height: 80% !important;
-     }
-
-     .inputBox{
-  
-      height: 10% !important;
-     
-  }
-  #chatInput{
- 
-      padding: 4vw !important;
-      font-size: 4vw !important;
-  }
-  .messageBox{
- 
-     
-      padding: 3vw !important;
-      margin: 3vw !important;
-      border-radius: 1.5vw !important;
-      font-size: 3.7vw !important;
-  }
-
-
-}

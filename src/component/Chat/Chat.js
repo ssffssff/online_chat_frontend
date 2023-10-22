@@ -8,9 +8,9 @@ import ReactScrollToBottom  from "react-scroll-to-bottom";
 import closeIcon from "../../images/closeIcon.png";
 import logo from '../../images/logo.jpg';
 
+
 let socket;
 const ENDPOINT = "http://localhost:4500/";
-
 
 
 const Chat = () => {

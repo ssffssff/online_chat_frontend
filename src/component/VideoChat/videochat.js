@@ -28,7 +28,7 @@ const VideoChat = () => {
         });
       })
       .catch((error) => {
-        console.error('Error accessing camera/microphone:', error);
+        // console.error('Error accessing camera/microphone:', error);
       });
   }, []);
 
