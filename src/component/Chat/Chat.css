@@ -1,3 +1,27 @@
+/* Chat.css */
+
+/* Your existing styles for the header */
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    .header {
+      /* Add your responsive styles here for smaller screens */
+      background-color: #333; /* For example, change the background color */
+      /* padding: 10px; Adjust padding or margins as needed */
+      /* Add any other styles you want for smaller screens */
+    }
+  
+    /* You can also modify other elements inside the header, like the logo and close button */
+    .header h2 {
+      font-size: 10px; /* Adjust font size for smaller screens */
+    }
+    .my1{
+        display: none;
+    }
+  }
+  
+  /* Rest of your CSS styles */
+  
 .chatPage{
     background-color: hwb(60 79% 19%);
     /* background-image: url(../../images/saurabh.jpg); */
@@ -31,26 +55,35 @@
     margin: 2.5vmax;
 }
 
-.my{
-    block-size: 10px;
+/* .my{
+    block-size: 8px;
     margin: 2.5vmax;
     transition: all 0.3s;
     cursor: pointer;
-}
+} */
 
-.header img{
+/* .header img{
     block-size:40px;
     size-adjust: cover;
     margin: 1vmax;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-
-.header img:hover{
+    /* transition: all 0.3s; */
+    /* cursor: pointer;
+} */ 
+.my{
+    block-size:10px;
+    size-adjust: cover;
+    margin: 1vmax;
     transform: scale(1.2);
 }
-
+.my1{
+    block-size:40px;
+    size-adjust: cover;
+    margin: 1vmax;
+    transform: scale(1.2);
+}
+.my:hover{
+    transform: scale(1.2);
+}
 .chatBox{
     /* border: 0.2vmax solid black; */
     height: 70%;
