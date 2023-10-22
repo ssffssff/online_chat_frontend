@@ -10,7 +10,7 @@ import logo from '../../images/logo.jpg';
 
 
 let socket;
-const ENDPOINT = "http://localhost:4500/";
+const ENDPOINT = "https://online-chat-backend-kszt.onrender.com/";
 
 
 const Chat = () => {
