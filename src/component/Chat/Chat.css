@@ -3,6 +3,23 @@
 /* Your existing styles for the header */
 
 /* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .emoji-picker-button {
+      font-size: 24px; /* Adjust the font size */
+      padding: 0px; /* Adjust the padding */
+      /* height: 50px; */
+      padding-bottom: 0;
+    
+    }
+  
+    .emoji-list {
+      font-size: 10px; 
+      margin-bottom: 20px;
+      background-color: #333;
+      /* Adjust the font size */
+      /* Add any other necessary styles for mobile-sized screens */
+    }
+  }
 @media screen and (max-width: 768px) {
     .header {
       /* Add your responsive styles here for smaller screens */
@@ -21,7 +38,17 @@
   }
   
   /* Rest of your CSS styles */
-  
+  .emoji-picker{
+    box-sizing: border-box;
+    border-top: 0.2vmax solid #2f2e2e25;
+  }
+  .emoji-picker-button{
+    height:35px;
+    size-adjust: cover;
+  }
+.emoji-list{
+    background-color: #333;
+}
 .chatPage{
     background-color: hwb(60 79% 19%);
     /* background-image: url(../../images/saurabh.jpg); */
@@ -98,6 +125,7 @@
 }
 
 #chatInput{
+    padding-left: 0;
     width: 80%;
     border : none;
     padding: 2vmax;
