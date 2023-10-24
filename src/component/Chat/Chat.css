@@ -3,12 +3,15 @@
 /* Your existing styles for the header */
 
 /* Media query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     .emoji-picker-button {
       font-size: 24px; /* Adjust the font size */
       padding: 0px; /* Adjust the padding */
       /* height: 50px; */
       padding-bottom: 0;
+      height: 100% !important;
+      width: 100% !important;
     
     }
   
@@ -19,8 +22,6 @@
       /* Adjust the font size */
       /* Add any other necessary styles for mobile-sized screens */
     }
-  }
-@media screen and (max-width: 768px) {
     .header {
       /* Add your responsive styles here for smaller screens */
       background-color: #333; /* For example, change the background color */
@@ -32,8 +33,13 @@
     .header h2 {
       font-size: 10px; /* Adjust font size for smaller screens */
     }
-    .my1{
+    /* .my1{
         display: none;
+    } */
+    .chatContainer{
+        /* padding: 100px; */
+        height: 100%;
+        width: 100%;
     }
   }
   
@@ -108,9 +114,7 @@
     margin: 1vmax;
     transform: scale(1.2);
 }
-.my:hover{
-    transform: scale(1.2);
-}
+
 .chatBox{
     /* border: 0.2vmax solid black; */
     height: 70%;
